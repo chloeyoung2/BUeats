@@ -2,6 +2,9 @@ import UIKit
 import MapKit
 import Firebase
 
+
+class TestViewController: UIViewController {
+
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
