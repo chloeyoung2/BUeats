@@ -1,6 +1,6 @@
 import UIKit
 import MapKit
-class ViewController: UIViewController {
+class TestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
