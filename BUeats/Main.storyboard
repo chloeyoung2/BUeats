@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9FA-Zw-oP2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="Lc5-Rn-gp9">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="PWx-yl-SyS" customClass="LoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3jY-Sy-UUI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cas-c3-7QA">
+                                <rect key="frame" x="168" y="335" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="LoginButton:" destination="3jY-Sy-UUI" eventType="touchUpInside" id="Yt7-RK-4cs"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bW0-r8-bqG">
+                                <rect key="frame" x="139" y="194" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZAD-55-eLK">
+                                <rect key="frame" x="139" y="135" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="emailTextField:" destination="3jY-Sy-UUI" eventType="editingDidEnd" id="Jde-Rh-fO0"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xLD-an-h9t"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ruF-Dw-fSh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94" y="159"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aHd-Sk-IY8">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="6h9-o0-xyK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HbN-cv-meh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ugb-qp-Aeq">
+                                <rect key="frame" x="16" y="38" width="343" height="196"/>
+                            </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VSw-vM-eSB">
+                                <rect key="frame" x="16" y="255" width="343" height="363"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="363" id="ex1-62-n2d"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ugb-qp-Aeq" firstAttribute="top" secondItem="0FT-sj-6F9" secondAttribute="top" constant="18" id="0ep-b7-2IN"/>
+                            <constraint firstItem="VSw-vM-eSB" firstAttribute="trailing" secondItem="HbN-cv-meh" secondAttribute="trailingMargin" id="9pD-8U-Cmb"/>
+                            <constraint firstItem="VSw-vM-eSB" firstAttribute="leading" secondItem="Ugb-qp-Aeq" secondAttribute="leading" id="BIw-H4-7dh"/>
+                            <constraint firstItem="VSw-vM-eSB" firstAttribute="leading" secondItem="HbN-cv-meh" secondAttribute="leadingMargin" id="DPM-cH-5n8"/>
+                            <constraint firstItem="VSw-vM-eSB" firstAttribute="top" secondItem="Ugb-qp-Aeq" secondAttribute="bottom" constant="21" id="LT4-9J-2WE"/>
+                            <constraint firstItem="VSw-vM-eSB" firstAttribute="trailing" secondItem="Ugb-qp-Aeq" secondAttribute="trailing" id="d6T-FE-xys"/>
+                            <constraint firstItem="0FT-sj-6F9" firstAttribute="bottom" secondItem="VSw-vM-eSB" secondAttribute="bottom" constant="49" id="kyh-AR-Oz5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0FT-sj-6F9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bmh-Pd-0oJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="-584.25787106446785"/>
+        </scene>
+        <!--App Container View Controller-->
+        <scene sceneID="3RN-Lc-2wu">
+            <objects>
+                <viewController storyboardIdentifier="AppContainerViewController" id="9FA-Zw-oP2" customClass="AppContainerViewController" customModule="BUeats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jzh-t7-FDN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4KW-4K-tfA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lEE-x0-aGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-732" y="-189"/>
+        </scene>
+    </scenes>
+</document>
