@@ -30,12 +30,27 @@ class TestViewController: UIViewController {
 
 }
     
-   class ListView Controller: UIViewController, CLLocationManagerDelegate {
+   class ListViewController: UIViewController, CLLocationManagerDelegate {
     
-    let locationManager = CLLocationManager
+    let locationManager = CLLocationManager()
     let placeManager = PlaceManager()
     
-    @IBOutlet weak var 
- 
+    @IBOutlet weak var tableView: UITableView!
+
+    locationManager.delegate = self 
+    locationManager.startUpdatingLocation()
     }
+    extension ListViewController: UITableViewDataSource {
+        
+        func tableView(_ tableView: UITableView, numberofRowsInSection section: Int) -> Int {
+        return placeManager.places.count
+        }
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+            let restauraunts = PlaceManager.places[indexPath.row]
+            
+            cell.textLabel?.text = restauraunts.title
+            return cell
+    }
+}
 }
