@@ -18,7 +18,7 @@
 		57B2542921AD957500B25AE9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B2542821AD957500B25AE9 /* LoginViewController.swift */; };
 		57B2543721ADA74B00B25AE9 /* PlaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B2543621ADA74B00B25AE9 /* PlaceManager.swift */; };
 		57B2543921ADA79E00B25AE9 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B2543821ADA79D00B25AE9 /* Place.swift */; };
-		57B2543B21ADA7E300B25AE9 /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B2543A21ADA7E300B25AE9 /* Hotel.swift */; };
+		57B2543B21ADA7E300B25AE9 /* Restauraunts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B2543A21ADA7E300B25AE9 /* Restauraunts.swift */; };
 		93DE598EB6A9770E5656E908 /* libPods-BUeats.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE321F8D4E99D1856D20BC1 /* libPods-BUeats.a */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,7 @@
 		57B2542821AD957500B25AE9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		57B2543621ADA74B00B25AE9 /* PlaceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceManager.swift; sourceTree = "<group>"; };
 		57B2543821ADA79D00B25AE9 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
-		57B2543A21ADA7E300B25AE9 /* Hotel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		57B2543A21ADA7E300B25AE9 /* Restauraunts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restauraunts.swift; sourceTree = "<group>"; };
 		7AE321F8D4E99D1856D20BC1 /* libPods-BUeats.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BUeats.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4ABD0248D458DE01003C219 /* Pods-BUeats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BUeats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BUeats/Pods-BUeats.debug.xcconfig"; sourceTree = "<group>"; };
 		BDFC01FF132D730E0C922B6F /* Pods-BUeats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BUeats.release.xcconfig"; path = "Pods/Target Support Files/Pods-BUeats/Pods-BUeats.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 				57B2542821AD957500B25AE9 /* LoginViewController.swift */,
 				57B2541E21A708B500B25AE9 /* AppManager.swift */,
 				57B2543821ADA79D00B25AE9 /* Place.swift */,
-				57B2543A21ADA7E300B25AE9 /* Hotel.swift */,
+				57B2543A21ADA7E300B25AE9 /* Restauraunts.swift */,
 				57B2543621ADA74B00B25AE9 /* PlaceManager.swift */,
 				57B2541121A46C5200B25AE9 /* Assets.xcassets */,
 				57B2541321A46C5200B25AE9 /* LaunchScreen.storyboard */,
@@ -209,7 +209,7 @@
 			files = (
 				57B2540D21A46C5000B25AE9 /* ViewController.swift in Sources */,
 				57B2540B21A46C5000B25AE9 /* AppDelegate.swift in Sources */,
-				57B2543B21ADA7E300B25AE9 /* Hotel.swift in Sources */,
+				57B2543B21ADA7E300B25AE9 /* Restauraunts.swift in Sources */,
 				57B2541D21A7080600B25AE9 /* AppContainerViewController.swift in Sources */,
 				57B2542921AD957500B25AE9 /* LoginViewController.swift in Sources */,
 				57B2541F21A708B500B25AE9 /* AppManager.swift in Sources */,
