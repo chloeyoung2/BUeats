@@ -9,6 +9,8 @@ class LoginViewController: UIViewController {
             guard let user = authResult?.user else { return }
             print(user.email)
         }
+        Auth.auth().signIn(withEmail: "test@test.com", password: "chloeyoung123") { (user, error) in
+        }
     }
     
 }
