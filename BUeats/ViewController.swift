@@ -1,11 +1,12 @@
 import UIKit
 import MapKit
 import Firebase
-
+import CoreLocation
 
 class TestViewController: UIViewController {
+    
+    class ViewController: UIViewController {
 
-class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,5 +27,15 @@ class ViewController: UIViewController {
         }
    }
 
- }
+
+}
+    
+   class ListView Controller: UIViewController, CLLocationManagerDelegate {
+    
+    let locationManager = CLLocationManager
+    let placeManager = PlaceManager()
+    
+    @IBOutlet weak var 
+ 
+    }
 }
