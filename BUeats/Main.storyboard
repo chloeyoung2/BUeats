@@ -52,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="94" y="159"/>
         </scene>
-        <!--View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="aHd-Sk-IY8">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="6h9-o0-xyK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="6h9-o0-xyK" customClass="TableViewController" customModule="BUeats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HbN-cv-meh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,6 +90,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmh-Pd-0oJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="93.599999999999994" y="-584.25787106446785"/>
+        </scene>
+        <!--Sign Up Controller-->
+        <scene sceneID="EVu-u5-djp">
+            <objects>
+                <viewController id="VcY-sh-GSx" customClass="SignUpController" customModule="BUeats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xkn-hX-3ma">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="huW-2r-kRC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0U3-7f-W0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966" y="-189"/>
         </scene>
         <!--App Container View Controller-->
         <scene sceneID="3RN-Lc-2wu">
