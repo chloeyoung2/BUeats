@@ -82,6 +82,9 @@
                             <constraint firstItem="0FT-sj-6F9" firstAttribute="bottom" secondItem="VSw-vM-eSB" secondAttribute="bottom" constant="49" id="kyh-AR-Oz5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0FT-sj-6F9"/>
+                        <connections>
+                            <outlet property="tableView" destination="VSw-vM-eSB" id="3ac-zq-McY"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmh-Pd-0oJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

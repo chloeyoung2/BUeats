@@ -9,7 +9,7 @@ class TestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
     }
    
     @IBOutlet weak var emailTextField: UITextField!
@@ -36,6 +36,7 @@ class TestViewController: UIViewController {
     let placeManager = PlaceManager()
     
     @IBOutlet weak var tableView: UITableView!
+    
 
     locationManager.delegate = self 
     locationManager.startUpdatingLocation()
@@ -52,5 +53,5 @@ class TestViewController: UIViewController {
             cell.textLabel?.text = restauraunts.title
             return cell
     }
-}
+  }
 }
