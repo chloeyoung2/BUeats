@@ -50,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruF-Dw-fSh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94" y="159"/>
+            <point key="canvasLocation" x="-33" y="-278"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="aHd-Sk-IY8">
@@ -86,10 +86,13 @@
                             <outlet property="tableView" destination="VSw-vM-eSB" id="3ac-zq-McY"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="Ugb-qp-Aeq" id="JF5-qI-ibw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmh-Pd-0oJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="93.599999999999994" y="-584.25787106446785"/>
+            <point key="canvasLocation" x="958" y="-210"/>
         </scene>
         <!--Sign Up Controller-->
         <scene sceneID="EVu-u5-djp">
@@ -104,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0U3-7f-W0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="966" y="-189"/>
+            <point key="canvasLocation" x="-742" y="-277"/>
         </scene>
         <!--App Container View Controller-->
         <scene sceneID="3RN-Lc-2wu">
@@ -119,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lEE-x0-aGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-732" y="-189"/>
+            <point key="canvasLocation" x="-1463" y="-276"/>
         </scene>
     </scenes>
 </document>
