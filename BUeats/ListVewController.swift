@@ -44,7 +44,7 @@
 //
 //}
 //
-//// // performs the segue between tableview and next viewcontroller                          nwhen each row is selected
+//// // performs the segue between tableview and next viewcontroller when each row is selected
 ////extension ListViewController: UITableViewDelegate {
 ////
 ////

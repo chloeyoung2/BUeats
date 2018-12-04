@@ -24,7 +24,7 @@ class TableViewController: UIViewController {
         
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
-        
+    
     }
 }
 
