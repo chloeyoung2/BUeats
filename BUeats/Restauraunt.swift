@@ -1,12 +1,11 @@
 import UIKit
 import MapKit
 
-class Restauraunts: NSObject, MKAnnotation {
+class Restauraunt: NSObject, MKAnnotation {
     
     var coordinate: CLLocationCoordinate2D
     var title: String?
     let region: CLCircularRegion
-    var restauraunts = [Restauraunts]()
     
     init(coordinate: CLLocationCoordinate2D, title: String) {
         self.coordinate = coordinate

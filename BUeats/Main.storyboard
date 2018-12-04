@@ -43,6 +43,14 @@
                                     <action selector="emailTextField:" destination="3jY-Sy-UUI" eventType="editingDidEnd" id="Jde-Rh-fO0"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBz-C8-umb">
+                                <rect key="frame" x="165" y="396" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="register"/>
+                                <connections>
+                                    <segue destination="VcY-sh-GSx" kind="show" id="4Cl-0W-bnt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xLD-an-h9t"/>
@@ -50,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruF-Dw-fSh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-33" y="-278"/>
+            <point key="canvasLocation" x="-34.399999999999999" y="-278.41079460269867"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="aHd-Sk-IY8">
@@ -69,6 +77,20 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="363" id="ex1-62-n2d"/>
                                 </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="TKM-sB-bCg">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TKM-sB-bCg" id="Xlk-7K-RVI">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6h9-o0-xyK" id="Pxb-o7-WYR"/>
+                                    <outlet property="delegate" destination="6h9-o0-xyK" id="uaC-fE-urI"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -82,17 +104,15 @@
                             <constraint firstItem="0FT-sj-6F9" firstAttribute="bottom" secondItem="VSw-vM-eSB" secondAttribute="bottom" constant="49" id="kyh-AR-Oz5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0FT-sj-6F9"/>
-                        <connections>
-                            <outlet property="tableView" destination="VSw-vM-eSB" id="3ac-zq-McY"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="Ugb-qp-Aeq" id="JF5-qI-ibw"/>
+                        <outlet property="tableView" destination="VSw-vM-eSB" id="5vg-Xu-xV3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmh-Pd-0oJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="958" y="-210"/>
+            <point key="canvasLocation" x="887" y="-308"/>
         </scene>
         <!--Sign Up Controller-->
         <scene sceneID="EVu-u5-djp">
@@ -107,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0U3-7f-W0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-742" y="-277"/>
+            <point key="canvasLocation" x="-759" y="214"/>
         </scene>
         <!--App Container View Controller-->
         <scene sceneID="3RN-Lc-2wu">

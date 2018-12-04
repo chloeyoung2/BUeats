@@ -16,9 +16,8 @@
 		57B2542521A7160000B25AE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B2542421A7160000B25AE9 /* Main.storyboard */; };
 		57B2542721AD94DA00B25AE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57B2542621AD94DA00B25AE9 /* GoogleService-Info.plist */; };
 		57B2542921AD957500B25AE9 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B2542821AD957500B25AE9 /* SignUpController.swift */; };
-		57B2543721ADA74B00B25AE9 /* PlaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B2543621ADA74B00B25AE9 /* PlaceManager.swift */; };
 		57B2543921ADA79E00B25AE9 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B2543821ADA79D00B25AE9 /* Place.swift */; };
-		57B2543B21ADA7E300B25AE9 /* Restauraunts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B2543A21ADA7E300B25AE9 /* Restauraunts.swift */; };
+		57B2543B21ADA7E300B25AE9 /* Restauraunt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B2543A21ADA7E300B25AE9 /* Restauraunt.swift */; };
 		57B2543D21B044BB00B25AE9 /* RestaurantsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B2543C21B044BB00B25AE9 /* RestaurantsManager.swift */; };
 		57B2543F21B045DF00B25AE9 /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 57B2543E21B045DF00B25AE9 /* Location.gpx */; };
 		57B2544121B049B000B25AE9 /* ListVewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B2544021B049B000B25AE9 /* ListVewController.swift */; };
@@ -38,9 +37,8 @@
 		57B2542421A7160000B25AE9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		57B2542621AD94DA00B25AE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		57B2542821AD957500B25AE9 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
-		57B2543621ADA74B00B25AE9 /* PlaceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceManager.swift; sourceTree = "<group>"; };
 		57B2543821ADA79D00B25AE9 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
-		57B2543A21ADA7E300B25AE9 /* Restauraunts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restauraunts.swift; sourceTree = "<group>"; };
+		57B2543A21ADA7E300B25AE9 /* Restauraunt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restauraunt.swift; sourceTree = "<group>"; };
 		57B2543C21B044BB00B25AE9 /* RestaurantsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsManager.swift; sourceTree = "<group>"; };
 		57B2543E21B045DF00B25AE9 /* Location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		57B2544021B049B000B25AE9 /* ListVewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVewController.swift; sourceTree = "<group>"; };
@@ -92,8 +90,7 @@
 				57B2541E21A708B500B25AE9 /* AppManager.swift */,
 				57B2543821ADA79D00B25AE9 /* Place.swift */,
 				57B2543C21B044BB00B25AE9 /* RestaurantsManager.swift */,
-				57B2543A21ADA7E300B25AE9 /* Restauraunts.swift */,
-				57B2543621ADA74B00B25AE9 /* PlaceManager.swift */,
+				57B2543A21ADA7E300B25AE9 /* Restauraunt.swift */,
 				57B2543E21B045DF00B25AE9 /* Location.gpx */,
 				57B2541121A46C5200B25AE9 /* Assets.xcassets */,
 				57B2541321A46C5200B25AE9 /* LaunchScreen.storyboard */,
@@ -223,13 +220,12 @@
 				57B2540D21A46C5000B25AE9 /* TableViewController.swift in Sources */,
 				57B2540B21A46C5000B25AE9 /* AppDelegate.swift in Sources */,
 				57B2543D21B044BB00B25AE9 /* RestaurantsManager.swift in Sources */,
-				57B2543B21ADA7E300B25AE9 /* Restauraunts.swift in Sources */,
+				57B2543B21ADA7E300B25AE9 /* Restauraunt.swift in Sources */,
 				57B2544121B049B000B25AE9 /* ListVewController.swift in Sources */,
 				57B2541D21A7080600B25AE9 /* AppContainerViewController.swift in Sources */,
 				57B2542921AD957500B25AE9 /* SignUpController.swift in Sources */,
 				57B2541F21A708B500B25AE9 /* AppManager.swift in Sources */,
 				57B2543921ADA79E00B25AE9 /* Place.swift in Sources */,
-				57B2543721ADA74B00B25AE9 /* PlaceManager.swift in Sources */,
 				57B2544321B04C7200B25AE9 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
