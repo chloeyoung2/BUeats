@@ -17,6 +17,7 @@ class TableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         
         mapView.addAnnotations(restaurantManager.restauraunts)
         
@@ -67,3 +68,21 @@ extension TableViewController: UITableViewDataSource {
  }
 }
 
+      func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if segue.identifier == "Show" {
+        let destination = segue.destination as! MenuViewController
+             destination.place = (sender as! Restauraunt)
+             //animation = true
+            }
+        }
+
+
+extension TableViewController: UITableViewDelegate {
+  
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let restauraunt = RestaurauntsManager.restauraunts[indexPath.row]
+        performSegue(withIdentifier: "Show", sender: restauraunt)
+
+    }
+
+}

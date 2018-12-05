@@ -19,6 +19,7 @@ class AppManager {
         } else{
             viewController = storyboard.instantiateViewController(withIdentifier: "MainViewController")
         }
+
         appContainer.present(viewController, animated: true, completion: nil)
     }
 
