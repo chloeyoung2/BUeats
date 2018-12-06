@@ -20,6 +20,10 @@ class RestaurauntsManager {
             let costaCoordinate = CLLocationCoordinate2D(latitude: 50.742827, longitude: -1.894646)
             let costaTreasure = Restauraunt(coordinate: costaCoordinate, title: "Costa Coffee" )
             restauraunts.append(costaTreasure)
+       
+            let poolehouseCoordinate = CLLocationCoordinate2D(latitude: 50.743096, longitude: -1.897133)
+            let poolehouseTreasure = Restauraunt(coordinate: poolehouseCoordinate, title: "Starbucks Poole House" )
+            restauraunts.append(poolehouseTreasure)
     
             let studentshopCoordinate = CLLocationCoordinate2D(latitude: 50.742827, longitude: -1.894646)
             let studentshopTreasure = Restauraunt(coordinate: studentshopCoordinate, title: "Student Shop" )
@@ -32,7 +36,14 @@ class RestaurauntsManager {
             let nakedcoffeeCoordinate = CLLocationCoordinate2D(latitude: 50.7424538, longitude: -1.8966498)
             let nakedcoffeeTreasure = Restauraunt(coordinate: nakedcoffeeCoordinate, title: "Naked Coffee" )
             restauraunts.append(nakedcoffeeTreasure)
+        
+            let artsbarCoordinate = CLLocationCoordinate2D(latitude: 50.7418692, longitude: -1.8980906)
+            let artsbarTreasure = Restauraunt(coordinate: artsbarCoordinate, title: "Arts Bar" )
+            restauraunts.append(artsbarTreasure)
 
+        
+        
+        
     }
     
     
