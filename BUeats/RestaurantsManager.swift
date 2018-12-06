@@ -41,9 +41,11 @@ class RestaurauntsManager {
             let artsbarTreasure = Restauraunt(coordinate: artsbarCoordinate, title: "Arts Bar" )
             restauraunts.append(artsbarTreasure)
 
+            let refractoryCoordinate = CLLocationCoordinate2D(latitude: 50.741406, longitude: -1.897920)
+            let refractoryTreasure = Restauraunt(coordinate: refractoryCoordinate, title: "The Refractory" )
+            restauraunts.append(refractoryTreasure)
         
-        
-        
+
     }
     
     

@@ -27,7 +27,24 @@ class TableViewController: UIViewController {
         locationManager.startUpdatingLocation()
     
     }
-}
+    
+    
+    @IBAction func LogOutButton(_ sender: Any) {
+        
+        do{
+            try! Auth.auth().signOut()
+            } catch {
+                print("Logout Failed")
+            }
+        let vc = self.storyboard?.instantiateInitialViewController()
+        self.present(vc!, animated: true, completion: nil)
+        
+        }
+     
+        
+    }
+    
+
 
 extension TableViewController: MKMapViewDelegate {
     
@@ -66,24 +83,15 @@ extension TableViewController: UITableViewDataSource {
         cell.textLabel?.text = restaurauntForCell.title
         return cell
  }
+
+
+
+
+
+
+
+
+
 }
 
-//      func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//           if segue.identifier == "Show" {
-//        let destination = segue.destination as! MenuViewController
-//             destination.place = (sender as! Restauraunt)
-//             //animation = true
-//            }
-//        }
-//
-//
-//extension TableViewController: UITableViewDelegate {
-//
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let restauraunt = RestaurauntsManager.restauraunts[indexPath.row]
-//        performSegue(withIdentifier: "Show", sender: restauraunt)
-//
-//    }
-//
-//}
 
