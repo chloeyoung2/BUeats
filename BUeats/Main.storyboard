@@ -90,22 +90,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ugb-qp-Aeq">
-                                <rect key="frame" x="16" y="64" width="343" height="183"/>
+                                <rect key="frame" x="16" y="64" width="343" height="195"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="183" id="fGJ-Hj-c5R"/>
+                                    <constraint firstAttribute="height" constant="195" id="Q7g-mC-ayC"/>
                                 </constraints>
                             </mapView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VSw-vM-eSB">
-                                <rect key="frame" x="0.0" y="255" width="375" height="412"/>
+                                <rect key="frame" x="16" y="267" width="343" height="380"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" red="0.66329377889633179" green="0.82309454679489136" blue="0.92682409286499023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="TKM-sB-bCg">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TKM-sB-bCg" id="Xlk-7K-RVI">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -122,13 +122,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.66329377889633179" green="0.82309454679489136" blue="0.92682409286499023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ugb-qp-Aeq" firstAttribute="centerX" secondItem="VSw-vM-eSB" secondAttribute="centerX" id="7TY-NZ-xce"/>
-                            <constraint firstItem="Ugb-qp-Aeq" firstAttribute="leading" secondItem="HbN-cv-meh" secondAttribute="leadingMargin" id="9ui-Wl-S3r"/>
-                            <constraint firstItem="Ugb-qp-Aeq" firstAttribute="trailing" secondItem="HbN-cv-meh" secondAttribute="trailingMargin" id="Dnb-TY-HJa"/>
-                            <constraint firstItem="VSw-vM-eSB" firstAttribute="bottom" secondItem="0FT-sj-6F9" secondAttribute="bottom" id="F7O-f0-WSD"/>
-                            <constraint firstItem="VSw-vM-eSB" firstAttribute="top" secondItem="Ugb-qp-Aeq" secondAttribute="bottom" constant="8" symbolic="YES" id="aOx-Mp-wnT"/>
-                            <constraint firstItem="VSw-vM-eSB" firstAttribute="leading" secondItem="HbN-cv-meh" secondAttribute="leading" id="bYy-wf-5GM"/>
-                            <constraint firstItem="Ugb-qp-Aeq" firstAttribute="top" secondItem="0FT-sj-6F9" secondAttribute="top" id="yAD-z9-m8k"/>
+                            <constraint firstAttribute="bottom" secondItem="VSw-vM-eSB" secondAttribute="bottom" constant="20" symbolic="YES" id="93z-hl-BeO"/>
+                            <constraint firstItem="Ugb-qp-Aeq" firstAttribute="top" secondItem="0FT-sj-6F9" secondAttribute="top" id="bs4-Ud-c9b"/>
+                            <constraint firstItem="Ugb-qp-Aeq" firstAttribute="trailing" secondItem="VSw-vM-eSB" secondAttribute="trailing" id="ebK-Nm-C0E"/>
+                            <constraint firstItem="VSw-vM-eSB" firstAttribute="top" secondItem="Ugb-qp-Aeq" secondAttribute="bottom" constant="8" symbolic="YES" id="fsJ-g0-dHW"/>
+                            <constraint firstItem="Ugb-qp-Aeq" firstAttribute="leading" secondItem="VSw-vM-eSB" secondAttribute="leading" id="qZX-EZ-yAh"/>
+                            <constraint firstItem="Ugb-qp-Aeq" firstAttribute="leading" secondItem="HbN-cv-meh" secondAttribute="leadingMargin" id="w0F-x4-vHX"/>
+                            <constraint firstItem="Ugb-qp-Aeq" firstAttribute="trailing" secondItem="HbN-cv-meh" secondAttribute="trailingMargin" id="xnQ-Cu-CWW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0FT-sj-6F9"/>
                     </view>
