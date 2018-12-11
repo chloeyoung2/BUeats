@@ -26,7 +26,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="LoginButton:" destination="3jY-Sy-UUI" eventType="touchUpInside" id="Yt7-RK-4cs"/>
+                                    <action selector="LoginButton:" destination="PWx-yl-SyS" eventType="touchUpInside" id="pua-SE-gbm"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bW0-r8-bqG">
@@ -42,9 +42,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="emailTextField:" destination="3jY-Sy-UUI" eventType="editingDidEnd" id="Jde-Rh-fO0"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email/Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0D-qE-zdf">
                                 <rect key="frame" x="112" y="108" width="151" height="26"/>
@@ -76,6 +73,10 @@
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xLD-an-h9t"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="ZAD-55-eLK" id="jSN-Be-xdX"/>
+                        <outlet property="passwordTextField" destination="bW0-r8-bqG" id="YXM-dm-qrn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruF-Dw-fSh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
