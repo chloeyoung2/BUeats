@@ -166,50 +166,12 @@
                                 <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="246" id="eE9-HA-jf7">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="246"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="4qG-TO-DqC">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eE9-HA-jf7" id="uyV-TE-HDT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="245.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4qG-TO-DqC" id="1RN-jr-ZeL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ing-uQ-nXC">
-                                                    <rect key="frame" x="14" y="10.5" width="347" height="224.5"/>
-                                                    <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Dylans-Bar-Mwal" translatesAutoresizingMaskIntoConstraints="NO" id="Hlg-fl-5dz">
-                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="168"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="168" id="ngW-Uo-VAZ"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0W-Ye-Vpb">
-                                                            <rect key="frame" x="8" y="189" width="42" height="21.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <constraints>
-                                                        <constraint firstItem="Hlg-fl-5dz" firstAttribute="top" secondItem="ing-uQ-nXC" secondAttribute="top" id="56Z-GQ-i6P"/>
-                                                        <constraint firstItem="c0W-Ye-Vpb" firstAttribute="top" secondItem="Hlg-fl-5dz" secondAttribute="bottom" constant="21" id="beZ-2c-gps"/>
-                                                        <constraint firstItem="Hlg-fl-5dz" firstAttribute="leading" secondItem="ing-uQ-nXC" secondAttribute="leading" id="iTC-MM-1GH"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Hlg-fl-5dz" secondAttribute="trailing" id="kV7-eI-dkQ"/>
-                                                        <constraint firstItem="c0W-Ye-Vpb" firstAttribute="leading" secondItem="ing-uQ-nXC" secondAttribute="leadingMargin" id="uYy-eA-rfg"/>
-                                                        <constraint firstAttribute="bottom" secondItem="c0W-Ye-Vpb" secondAttribute="bottom" constant="14" id="vmp-fG-hR7"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="ing-uQ-nXC" firstAttribute="trailing" secondItem="uyV-TE-HDT" secondAttribute="trailingMargin" id="6Be-WG-vTG"/>
-                                                <constraint firstItem="ing-uQ-nXC" firstAttribute="bottom" secondItem="uyV-TE-HDT" secondAttribute="bottomMargin" id="7Wp-ae-fDr"/>
-                                                <constraint firstItem="ing-uQ-nXC" firstAttribute="bottom" secondItem="uyV-TE-HDT" secondAttribute="bottomMargin" id="QF2-tl-dBy"/>
-                                                <constraint firstItem="ing-uQ-nXC" firstAttribute="leading" secondItem="uyV-TE-HDT" secondAttribute="leadingMargin" id="e7i-AJ-9HT"/>
-                                                <constraint firstItem="ing-uQ-nXC" firstAttribute="centerY" secondItem="uyV-TE-HDT" secondAttribute="centerY" id="eN3-U7-rFL"/>
-                                                <constraint firstItem="ing-uQ-nXC" firstAttribute="centerX" secondItem="uyV-TE-HDT" secondAttribute="centerX" id="hov-hF-HGb"/>
-                                                <constraint firstItem="ing-uQ-nXC" firstAttribute="top" secondItem="uyV-TE-HDT" secondAttribute="topMargin" id="rot-yq-agK"/>
-                                                <constraint firstItem="ing-uQ-nXC" firstAttribute="leading" secondItem="uyV-TE-HDT" secondAttribute="leadingMargin" constant="-1" id="uAA-tx-IaN"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -218,11 +180,15 @@
                         <color key="backgroundColor" red="0.66329377889633179" green="0.82309454679489136" blue="0.92682409286499023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="RFr-XD-ula" firstAttribute="top" secondItem="MwX-C3-zMJ" secondAttribute="top" id="CRQ-b2-avD"/>
+                            <constraint firstItem="052-Lz-Thc" firstAttribute="bottom" secondItem="MwX-C3-zMJ" secondAttribute="bottom" id="Dvd-cE-L4y"/>
                             <constraint firstItem="RFr-XD-ula" firstAttribute="leading" secondItem="ni4-b3-hV6" secondAttribute="leading" id="Hut-JD-To6"/>
                             <constraint firstAttribute="trailing" secondItem="RFr-XD-ula" secondAttribute="trailing" id="KYE-dp-sPx"/>
                             <constraint firstItem="052-Lz-Thc" firstAttribute="bottom" secondItem="MwX-C3-zMJ" secondAttribute="bottom" id="Ldu-wV-VeN"/>
+                            <constraint firstItem="052-Lz-Thc" firstAttribute="leading" secondItem="MwX-C3-zMJ" secondAttribute="leading" id="YSf-DB-KEn"/>
+                            <constraint firstItem="052-Lz-Thc" firstAttribute="top" secondItem="RFr-XD-ula" secondAttribute="bottom" id="cPZ-kn-OJr"/>
                             <constraint firstItem="052-Lz-Thc" firstAttribute="top" secondItem="RFr-XD-ula" secondAttribute="bottom" id="eKy-9I-But"/>
                             <constraint firstItem="052-Lz-Thc" firstAttribute="trailing" secondItem="RFr-XD-ula" secondAttribute="trailing" id="m6H-U9-sQT"/>
+                            <constraint firstItem="052-Lz-Thc" firstAttribute="trailing" secondItem="MwX-C3-zMJ" secondAttribute="trailing" id="qHY-cT-8dJ"/>
                             <constraint firstItem="052-Lz-Thc" firstAttribute="leading" secondItem="RFr-XD-ula" secondAttribute="leading" id="rxF-Oh-FxZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MwX-C3-zMJ"/>
@@ -357,8 +323,5 @@
             <point key="canvasLocation" x="2770.4000000000001" y="-310.79460269865069"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Dylans-Bar-Mwal" width="640" height="640"/>
-    </resources>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

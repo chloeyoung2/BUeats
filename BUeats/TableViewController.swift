@@ -17,7 +17,13 @@ class TableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+//        tableView.datasource = self
+//        tableView.delegate = self
+        
+       
+        let nib = UINib(nibName: "CustomCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "Cell")
+
         
         mapView.addAnnotations(restaurantManager.restauraunts)
         
@@ -78,13 +84,15 @@ extension TableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let restaurauntForCell = restaurantManager.restauraunts[indexPath.row]
-
+        
+    
         cell.textLabel?.text = restaurauntForCell.title
         return cell
- }
+  }
+
+
+
 
 
 
 }
-
-
