@@ -17,14 +17,10 @@ class TableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tableView.datasource = self
-//        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.delegate = self
         
        
-        let nib = UINib(nibName: "CustomCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "Cell")
-
-        
         mapView.addAnnotations(restaurantManager.restauraunts)
         
         mapView.showAnnotations(mapView.annotations, animated: false)
@@ -36,19 +32,17 @@ class TableViewController: UIViewController {
     
     
     @IBAction func LogOutButton(_ sender: Any) {
-        
-        do{
-            try! Auth.auth().signOut()
-            } catch {
-                print("Logout Failed")
-            }
-        let vc = self.storyboard?.instantiateInitialViewController()
-        self.present(vc!, animated: true, completion: nil)
-        
-        }
-    
+        AppManager.shared.logout()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Show" {
+            let destination = segue.destination as! MenuViewController
+            destination.restaurant = (sender as! Restauraunt)
+        }
+    }
+
+}
 
 
 extension TableViewController: MKMapViewDelegate {
@@ -81,6 +75,7 @@ extension TableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurantManager.restauraunts.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let restaurauntForCell = restaurantManager.restauraunts[indexPath.row]
@@ -91,8 +86,14 @@ extension TableViewController: UITableViewDataSource {
   }
 
 
+}
 
-
-
-
+extension TableViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let restaurauntForCell = restaurantManager.restauraunts[indexPath.row]
+        performSegue(withIdentifier: "Show", sender: restaurauntForCell)
+    }
+    
+    
 }

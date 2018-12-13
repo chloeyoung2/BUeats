@@ -110,9 +110,6 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <segue destination="1Eo-ul-DKh" kind="show" identifier="Show" id="rYo-A4-Prh"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -143,6 +140,7 @@
                     <connections>
                         <outlet property="mapView" destination="Ugb-qp-Aeq" id="JF5-qI-ibw"/>
                         <outlet property="tableView" destination="VSw-vM-eSB" id="5vg-Xu-xV3"/>
+                        <segue destination="1Eo-ul-DKh" kind="show" identifier="Show" id="d5O-eQ-dJP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmh-Pd-0oJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -175,6 +173,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1Eo-ul-DKh" id="P9W-VN-3bR"/>
+                                    <outlet property="delegate" destination="1Eo-ul-DKh" id="uhh-Hq-as6"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.66329377889633179" green="0.82309454679489136" blue="0.92682409286499023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -195,6 +197,7 @@
                     </view>
                     <connections>
                         <outlet property="searchDisplayController" destination="S5v-lP-ErU" id="dxu-Rb-Ib5"/>
+                        <outlet property="tableView" destination="052-Lz-Thc" id="Gif-eR-Nbm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="urQ-1J-Nan" userLabel="First Responder" sceneMemberID="firstResponder"/>

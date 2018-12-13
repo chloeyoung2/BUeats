@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5740C77C21C2B57900885117 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740C77B21C2B57900885117 /* CustomCell.swift */; };
 		5740C77E21C2B5C300885117 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5740C77D21C2B5C300885117 /* CustomCell.xib */; };
+		5740C78021C2C73300885117 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740C77F21C2C73300885117 /* MenuViewController.swift */; };
+		5740C78221C2CB9600885117 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740C78121C2CB9600885117 /* MenuItem.swift */; };
 		57B2540B21A46C5000B25AE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B2540A21A46C5000B25AE9 /* AppDelegate.swift */; };
 		57B2540D21A46C5000B25AE9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B2540C21A46C5000B25AE9 /* TableViewController.swift */; };
 		57B2541221A46C5200B25AE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B2541121A46C5200B25AE9 /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		5740C77B21C2B57900885117 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		5740C77D21C2B5C300885117 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		5740C77F21C2C73300885117 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		5740C78121C2CB9600885117 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		57B2540721A46C5000B25AE9 /* BUeats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BUeats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B2540A21A46C5000B25AE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57B2540C21A46C5000B25AE9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 			children = (
 				57B2540A21A46C5000B25AE9 /* AppDelegate.swift */,
 				57B2540C21A46C5000B25AE9 /* TableViewController.swift */,
+				5740C77F21C2C73300885117 /* MenuViewController.swift */,
 				57B2544021B049B000B25AE9 /* ListVewController.swift */,
 				57B2541C21A7080600B25AE9 /* AppContainerViewController.swift */,
 				57B2542821AD957500B25AE9 /* SignUpController.swift */,
@@ -95,6 +100,7 @@
 				57B2543821ADA79D00B25AE9 /* Place.swift */,
 				57B2543C21B044BB00B25AE9 /* RestaurantsManager.swift */,
 				57B2543A21ADA7E300B25AE9 /* Restauraunt.swift */,
+				5740C78121C2CB9600885117 /* MenuItem.swift */,
 				5740C77B21C2B57900885117 /* CustomCell.swift */,
 				5740C77D21C2B5C300885117 /* CustomCell.xib */,
 				57B2543E21B045DF00B25AE9 /* Location.gpx */,
@@ -253,7 +259,9 @@
 				57B2543D21B044BB00B25AE9 /* RestaurantsManager.swift in Sources */,
 				57B2543B21ADA7E300B25AE9 /* Restauraunt.swift in Sources */,
 				57B2544121B049B000B25AE9 /* ListVewController.swift in Sources */,
+				5740C78221C2CB9600885117 /* MenuItem.swift in Sources */,
 				57B2541D21A7080600B25AE9 /* AppContainerViewController.swift in Sources */,
+				5740C78021C2C73300885117 /* MenuViewController.swift in Sources */,
 				57B2542921AD957500B25AE9 /* SignUpController.swift in Sources */,
 				57B2541F21A708B500B25AE9 /* AppManager.swift in Sources */,
 				57B2543921ADA79E00B25AE9 /* Place.swift in Sources */,

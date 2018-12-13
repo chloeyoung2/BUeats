@@ -1,12 +1,15 @@
 import Foundation
 import CoreLocation
 import MapKit
+import Firebase
 
 class RestaurauntsManager {
     
     var restauraunts = [Restauraunt]()
     
     init() {
+        
+        
         
             
             let restaurauntsCoordinate = CLLocationCoordinate2D(latitude: 50.7429011, longitude: -1.8990322)

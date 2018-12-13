@@ -7,6 +7,8 @@ class Restauraunt: NSObject, MKAnnotation {
     var title: String?
     let region: CLCircularRegion
     
+    var menu = [MenuItem]()
+    
     init(coordinate: CLLocationCoordinate2D, title: String) {
         self.coordinate = coordinate
         self.title = title
