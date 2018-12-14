@@ -9,24 +9,24 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(restaurant.title)
-        
-        let nib = UINib(nibName: "CustomCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "Cell")
+       
     }
 }
 
 extension MenuViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return restaurant.menu.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      return UITableViewCell(frame: CGRect.zero)
+      let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let menuItem = restaurant.menu[indexPath.row]
+        
+        cell.textLabel?.text = menuItem.title + " \(menuItem.price)"
+        return cell
+
     }
     
-    
-}
 
+}

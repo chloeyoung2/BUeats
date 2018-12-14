@@ -7,9 +7,6 @@ class TableViewController: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
     
-    var place: Place!
-    var restauraunts = [Restauraunt]()
-    
     let locationManager = CLLocationManager()
     let restaurantManager = RestaurauntsManager()
 
@@ -20,15 +17,18 @@ class TableViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
-       
+        
         mapView.addAnnotations(restaurantManager.restauraunts)
-        
         mapView.showAnnotations(mapView.annotations, animated: false)
-        
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
-    
+        
+        restaurantManager.loadRestaurants {
+            self.tableView.reloadData()
+        }
     }
+    
+
     
     
     @IBAction func LogOutButton(_ sender: Any) {
@@ -81,7 +81,7 @@ extension TableViewController: UITableViewDataSource {
         let restaurauntForCell = restaurantManager.restauraunts[indexPath.row]
         
     
-        cell.textLabel?.text = restaurauntForCell.title
+        cell.textLabel?.text = restaurauntForCell.title! + " \(restaurauntForCell.menu.count)"
         return cell
   }
 
@@ -93,7 +93,7 @@ extension TableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let restaurauntForCell = restaurantManager.restauraunts[indexPath.row]
         performSegue(withIdentifier: "Show", sender: restaurauntForCell)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-    
     
 }

@@ -1,18 +1,34 @@
-import UIKit
 import MapKit
+import Firebase
 
 class Restauraunt: NSObject, MKAnnotation {
+   
+    var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: point.latitude, longitude: point.longitude)
+    }
     
-    var coordinate: CLLocationCoordinate2D
+    var point: GeoPoint
     var title: String?
-    let region: CLCircularRegion
+    
+    var region: CLCircularRegion {
+        return CLCircularRegion(center: coordinate, radius: 200, identifier: title!)
+    }
     
     var menu = [MenuItem]()
     
-    init(coordinate: CLLocationCoordinate2D, title: String) {
-        self.coordinate = coordinate
-        self.title = title
-        region = CLCircularRegion(center: coordinate, radius: 200, identifier: title)
+    init(document: QueryDocumentSnapshot) {
+        point = document.data()["location"] as! GeoPoint
+        self.title = document.data()["name"] as? String
+        super.init()
+        self.setMenu(data: document.data()["menu"] as! [String: Any])
+    }
+    
+    
+    private func setMenu(data: [String: Any]) {
+        data.forEach { key, value in
+            let item = MenuItem(title: key, data: value as! [String: Any])
+            menu.append(item)
+        }
     }
     
 }
