@@ -15,81 +15,9 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomCell" customModule="BUeats" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O3l-uP-dbP">
-                    <rect key="frame" x="189" y="80" width="170" height="194"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screenshot 2018-12-11 at 16.26.25" translatesAutoresizingMaskIntoConstraints="NO" id="GnL-0K-7eT">
-                            <rect key="frame" x="10" y="39" width="150" height="117"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" red="0.6268235445022583" green="0.8151666522026062" blue="0.9203721284866333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1WQ-N8-jmV">
-                    <rect key="frame" x="16" y="327" width="170" height="194"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screenshot 2018-12-13 at 16.13.49" translatesAutoresizingMaskIntoConstraints="NO" id="ORj-aU-Y7a">
-                            <rect key="frame" x="4" y="33" width="162" height="129"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.6268235445022583" green="0.8151666522026062" blue="0.9203721284866333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" red="0.6268235445022583" green="0.8151666522026062" blue="0.9203721284866333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </view>
-                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cn-nm-RxP">
-                    <rect key="frame" x="189" y="327" width="170" height="194"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Screenshot 2018-12-13 at 16.14.23" translatesAutoresizingMaskIntoConstraints="NO" id="cfj-KT-9dM">
-                            <rect key="frame" x="8" y="34" width="162" height="127"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="127" id="tXW-2P-Qxk"/>
-                            </constraints>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" red="0.6268235445022583" green="0.8151666522026062" blue="0.9203721284866333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstItem="cfj-KT-9dM" firstAttribute="top" secondItem="6cn-nm-RxP" secondAttribute="top" constant="34" id="343-up-2CK"/>
-                        <constraint firstItem="cfj-KT-9dM" firstAttribute="centerY" secondItem="6cn-nm-RxP" secondAttribute="centerY" id="B86-Ta-LYn"/>
-                        <constraint firstItem="cfj-KT-9dM" firstAttribute="leading" secondItem="6cn-nm-RxP" secondAttribute="leadingMargin" id="cnN-zW-wgV"/>
-                        <constraint firstAttribute="trailing" secondItem="cfj-KT-9dM" secondAttribute="trailing" id="tgd-6i-dgo"/>
-                    </constraints>
-                </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vzX-go-Bil">
-                    <rect key="frame" x="113" y="509" width="149" height="71"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screenshot 2018-12-13 at 16.15.32" translatesAutoresizingMaskIntoConstraints="NO" id="qeJ-Ig-jwg">
-                            <rect key="frame" x="32" y="18" width="85" height="35"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Esa-48-l4t">
-                    <rect key="frame" x="16" y="80" width="170" height="194"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screenshot 2018-12-13 at 16.12.48" translatesAutoresizingMaskIntoConstraints="NO" id="nNp-4d-20a">
-                            <rect key="frame" x="10" y="39" width="150" height="117"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" red="0.6268235445022583" green="0.8151666522026062" blue="0.9203721284866333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </view>
-            </subviews>
             <color key="backgroundColor" red="0.6268235445022583" green="0.8151666522026062" blue="0.9203721284866333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="268" y="218.1409295352324"/>
         </view>
     </objects>
-    <resources>
-        <image name="Screenshot 2018-12-11 at 16.26.25" width="251" height="265"/>
-        <image name="Screenshot 2018-12-13 at 16.12.48" width="496" height="442"/>
-        <image name="Screenshot 2018-12-13 at 16.13.49" width="217" height="212"/>
-        <image name="Screenshot 2018-12-13 at 16.14.23" width="232" height="188"/>
-        <image name="Screenshot 2018-12-13 at 16.15.32" width="85" height="35"/>
-    </resources>
 </document>
