@@ -16,8 +16,11 @@ class TableViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        
-        
+    
+        let nib = UINib(nibName: "CustomCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "Cell")
+        tableView.rowHeight = 100
+
         mapView.addAnnotations(restaurantManager.restauraunts)
         mapView.showAnnotations(mapView.annotations, animated: false)
         locationManager.requestAlwaysAuthorization()
@@ -76,12 +79,15 @@ extension TableViewController: UITableViewDataSource {
         return restaurantManager.restauraunts.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let restaurauntForCell = restaurantManager.restauraunts[indexPath.row]
-        
     
-        cell.textLabel?.text = restaurauntForCell.title! + " \(restaurauntForCell.menu.count)"
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! CustomCell
+     
+        let restaurauntForCell = restaurantManager.restauraunts[indexPath.row]
+    
+        cell.myLabel.text = restaurauntForCell.title!
+        
+
         return cell
   }
 
