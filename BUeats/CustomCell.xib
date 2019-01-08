@@ -17,7 +17,41 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <color key="backgroundColor" red="0.6268235445022583" green="0.8151666522026062" blue="0.9203721284866333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="268" y="218.1409295352324"/>
+            <connections>
+                <outlet property="myLabel" destination="w3B-cl-rAo" id="Rhv-uK-19l"/>
+            </connections>
+            <point key="canvasLocation" x="246" y="168"/>
         </view>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Rb2-AC-0qX">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rb2-AC-0qX" id="DCl-Dr-iiW">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3B-cl-rAo">
+                        <rect key="frame" x="29" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdE-9T-gWK">
+                        <rect key="frame" x="307" y="7" width="46" height="30"/>
+                        <state key="normal" title="Button"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="bdE-9T-gWK" secondAttribute="trailing" constant="6" id="7RW-bh-jfO"/>
+                    <constraint firstItem="w3B-cl-rAo" firstAttribute="baseline" secondItem="bdE-9T-gWK" secondAttribute="firstBaseline" id="ABq-0s-492"/>
+                    <constraint firstItem="w3B-cl-rAo" firstAttribute="centerY" secondItem="bdE-9T-gWK" secondAttribute="centerY" id="AKC-VD-Kxc"/>
+                    <constraint firstItem="w3B-cl-rAo" firstAttribute="baseline" secondItem="bdE-9T-gWK" secondAttribute="baseline" id="R7l-Qz-UkH"/>
+                    <constraint firstItem="w3B-cl-rAo" firstAttribute="leading" secondItem="DCl-Dr-iiW" secondAttribute="leadingMargin" constant="13" id="V7q-eI-aaz"/>
+                    <constraint firstItem="w3B-cl-rAo" firstAttribute="centerY" secondItem="DCl-Dr-iiW" secondAttribute="centerY" id="Yrl-gJ-gdX"/>
+                    <constraint firstItem="bdE-9T-gWK" firstAttribute="top" secondItem="DCl-Dr-iiW" secondAttribute="topMargin" constant="-4" id="mm8-vK-dWR"/>
+                    <constraint firstItem="w3B-cl-rAo" firstAttribute="top" secondItem="DCl-Dr-iiW" secondAttribute="topMargin" id="wTd-dX-pvB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="280.80000000000001" y="86.35682158920541"/>
+        </tableViewCell>
     </objects>
 </document>

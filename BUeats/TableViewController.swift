@@ -76,8 +76,13 @@ extension TableViewController: UITableViewDataSource {
         return restaurantManager.restauraunts.count
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! CustomCell
+        return cell
+
+        cell.myLabel.text = "Row \(indexPath.row)"
+
         let restaurauntForCell = restaurantManager.restauraunts[indexPath.row]
         
     
