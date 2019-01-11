@@ -9,6 +9,7 @@ class Restauraunt: NSObject, MKAnnotation {
     
     var point: GeoPoint
     var title: String?
+    var image: UIImage?
     
     var region: CLCircularRegion {
         return CLCircularRegion(center: coordinate, radius: 200, identifier: title!)
@@ -17,6 +18,7 @@ class Restauraunt: NSObject, MKAnnotation {
     var menu = [MenuItem]()
     
     init(document: QueryDocumentSnapshot) {
+        self.image = UIImageView
         point = document.data()["location"] as! GeoPoint
         self.title = document.data()["name"] as? String
         super.init()

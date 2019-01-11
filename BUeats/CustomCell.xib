@@ -25,7 +25,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screenshot 2018-12-11 at 16.26.25" translatesAutoresizingMaskIntoConstraints="NO" id="xLe-Zu-TZl">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xLe-Zu-TZl">
                         <rect key="frame" x="193" y="4" width="158" height="91"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.6268235445022583" green="0.8151666522026062" blue="0.9203721284866333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,12 +47,10 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="myImage" destination="xLe-Zu-TZl" id="gCO-xL-JGG"/>
                 <outlet property="myLabel" destination="k75-V7-rkO" id="R7c-hb-Yyb"/>
             </connections>
             <point key="canvasLocation" x="167.19999999999999" y="142.1289355322339"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="Screenshot 2018-12-11 at 16.26.25" width="251" height="265"/>
-    </resources>
 </document>
