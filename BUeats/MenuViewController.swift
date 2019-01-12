@@ -24,7 +24,8 @@ extension MenuViewController: UITableViewDataSource {
         let menuItem = restaurant.menu[indexPath.row]
         
         cell.textLabel?.text = menuItem.title + " \(menuItem.price)"
-        cell.myImage?.text = menuItem.image 
+//        cell.myImage?.text = menuItem.image
+//        cell.imageView?.image = UIImage(named: "Dylans menu")
         
         return cell
 

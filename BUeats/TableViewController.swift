@@ -86,7 +86,7 @@ extension TableViewController: UITableViewDataSource {
         let restaurauntForCell = restaurantManager.restauraunts[indexPath.row]
     
         cell.myLabel.text = restaurauntForCell.title!
-        cell.myImage = restaurauntForCell.image
+//        cell.imageView?.image = UIImage(named: "Dylans menu")
 
         return cell
   }
