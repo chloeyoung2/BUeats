@@ -36,7 +36,17 @@ class TableViewController: UIViewController {
         shop.coordinate = CLLocationCoordinate2D(latitude: 50.7425833, longitude: -1.8966615)
         mapView.addAnnotation(shop)
         
+        let starbucks = MKPointAnnotation()
+        starbucks.title = "StarBucks"
+        starbucks.coordinate = CLLocationCoordinate2D(latitude: 50.743121, longitude: -1.897231)
+        mapView.addAnnotation(starbucks)
         
+        let fusion = MKPointAnnotation()
+        fusion.title = "Fusion Cafe"
+        fusion.coordinate = CLLocationCoordinate2D(latitude: 50.7428838, longitude: -1.8973855)
+        mapView.addAnnotation(starbucks)
+        
+       
         mapView.addAnnotations(restaurantManager.restauraunts)
         mapView.showAnnotations(mapView.annotations, animated: false)
         locationManager.requestAlwaysAuthorization()
