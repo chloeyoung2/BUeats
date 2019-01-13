@@ -21,6 +21,22 @@ class TableViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: "Cell")
         tableView.rowHeight = 100
 
+        let dylans = MKPointAnnotation()
+        dylans.title = "Dylans"
+        dylans.coordinate = CLLocationCoordinate2D(latitude: 50.7429011, longitude: -1.8990322)
+        mapView.addAnnotation(dylans)
+        
+        let costa = MKPointAnnotation()
+        costa.title = "Costa Coffee"
+        costa.coordinate = CLLocationCoordinate2D(latitude: 50.742834, longitude: -1.894754)
+        mapView.addAnnotation(costa)
+        
+        let shop = MKPointAnnotation()
+        shop.title = "Student Shop"
+        shop.coordinate = CLLocationCoordinate2D(latitude: 50.7425833, longitude: -1.8966615)
+        mapView.addAnnotation(shop)
+        
+        
         mapView.addAnnotations(restaurantManager.restauraunts)
         mapView.showAnnotations(mapView.annotations, animated: false)
         locationManager.requestAlwaysAuthorization()
@@ -86,6 +102,8 @@ extension TableViewController: UITableViewDataSource {
         let restaurauntForCell = restaurantManager.restauraunts[indexPath.row]
     
         cell.myLabel.text = restaurauntForCell.title!
+//        cell.myButton.text = restaurauntForCell.label!
+        
 //        cell.imageView?.image = UIImage(named: "Dylans menu")
 
         return cell
